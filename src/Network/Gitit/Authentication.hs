@@ -76,6 +76,12 @@ registerUser params = do
                          pPassword = pword,
                          pEmail = email }
 
+registerUserRequestForm :: Handler
+registerUserRequestForm = undefined
+
+registerUserRequest :: Params -> Handler
+registerUserRequest = undefined
+
 resetPasswordRequestForm :: Params -> Handler
 resetPasswordRequestForm _ = do
   let passwordForm = gui "" ! [identifier "resetPassword"] << fieldset <<
